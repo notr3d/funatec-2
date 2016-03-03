@@ -32,7 +32,7 @@
 												<span class="icon-bar"></span>
 												<span class="icon-bar"></span>
 										</button>
-										<a class="page-logo navbar-brand" href="home">Brand</a>
+										<a class="page-logo navbar-brand" href="home"></a>
 								</div>
 
 								<div class="collapse navbar-collapse" id="navbar-collapse-main">

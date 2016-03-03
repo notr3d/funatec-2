@@ -28,11 +28,11 @@ body {
 .scrollup {
 	position: absolute;
 	bottom: 5px;
-	right: 5px;
+	right: 20px;
 	width: 45px;
 	height: 45px;
 	background: rgba(0, 0, 0, 0.33);
-	border: 4px solid rgba(0, 0, 0, 0.33);
+	border: 4px solid rgba(128, 128, 128, 0.33);
 	outline: none;
 	transition: all .3s;
 	&::before {
@@ -40,17 +40,21 @@ body {
 		display: block;
 		width: 20px;
 		height: 20px;
-		border-left: 5px solid rgba(0, 0, 0, 0.33);
-		border-top: 5px solid rgba(0, 0, 0, 0.33);
+		border-left: 5px solid rgba(128, 128, 128, 0.33);
+		border-top: 5px solid rgba(128, 128, 128, 0.33);
 		top: 50%;
 		left: 50%;
 		margin-top: 5px;
 		margin-left: 2px;
 		transform:rotate(45deg);
+		transition: all .3s;
 	}
 	&:hover {
-		transform: rotateY(180deg);
 		background-color: rgba(0, 0, 0, 0.66);
+		border-color: #ea940a;
+		&::before {
+			border-color: #ea940a;
+		}
 	}
 	@media @mobile {
 		bottom: 50px;
@@ -62,57 +66,58 @@ body {
 .page-header {
 	padding-top: 55px;
 	padding-bottom: 35px;
-	background: radial-gradient(100vh, #fff, #505050);	
-	.page-nav {	
-		.dropdown-menu {
-			border-radius: 0;
-			background: @orange;
-			padding: 0;
-			left: 0 !important;
-			a {
-				color: #fff;
-				padding: 5px 0 5px 15px;
-				&:hover {
-					background: lighten(@orange, 10%);
-				}
-			}
-			.divider {
-			}			
-		}
-		&__link {
-			font-size: 12px;
-			color: #fff;
-			text-transform: uppercase;
-			font-weight: bold;
-			transition: all .3s;
-			&:hover {				
-				background: @orange;
-				@media @mobile {
-					padding-left: 40px;
-				}
-			}
-			&:focus {				
-				background: @orange !important;
-			}			
-			&--active {
-				background: transparent !important;
-				box-shadow: 0 5px 0 0 @orange;
-				@media @mobile {					
-					background: @orange !important;
-					box-shadow: none;
-				}
-			}
-			@media @mobile {
-				background: @orange;
-			}
-		}		
-	}
+	margin: 0;
+	background: radial-gradient(100vh, #fff, #505050);		
 	.navbar {
-		margin-bottom: 0;
+		margin-bottom: 0 !important;
 		padding: 0 30px;
 	}
 	.navbar-nav {
 		background: rgba(0, 0, 0, 0.5);
+		li {	
+			.dropdown-menu {
+				border-radius: 0;
+				background: @orange;
+				padding: 0;
+				left: 0 !important;
+				li>a {
+					color: #fff;
+					padding: 5px 0 5px 15px;
+					&:hover {
+						background: lighten(@orange, 10%);
+					}
+				}
+				.divider {
+				}			
+			}
+			a {
+				font-size: 12px;
+				color: #fff;
+				text-transform: uppercase;
+				font-weight: bold;
+				transition: all .3s;
+				&:hover {				
+					background: @orange;
+					@media @mobile {
+						padding-left: 40px;
+					}
+				}
+				&:focus {				
+					background: @orange !important;
+				}			
+				&--active {
+					background: transparent !important;
+					box-shadow: 0 5px 0 0 @orange;
+					@media @mobile {					
+						background: @orange !important;
+						box-shadow: none;
+					}
+				}
+				@media @mobile {
+					background: @orange;
+				}
+			}		
+		}
 		@media @mobile {
 			margin-top: 40px;
 		}
@@ -129,7 +134,7 @@ body {
 	.page-logo {
 		margin-left: 15px;
 		width: 200px;
-		background: url(../img/page-logo.png) no-repeat center;
+		background: url(../_strap/img/page-logo.png) no-repeat center;
 	}
 }
 
@@ -308,7 +313,8 @@ body {
 	&__lower {	
 		padding: 15px 0;
 		border-top: 5px solid gray;	
-		background: radial-gradient(100vh, #b9b9b9, #505050);
+		background: radial-gradient(100vh, #b9b9b9, #505050);		
+		background: #272527;
 	}
 	h2 {
 		color: @orange;
@@ -334,6 +340,13 @@ body {
 		li {			
 		  padding: 5px 0;
 			display: inline-block;
+			a {
+				transition: all .3s;
+				&:hover {
+					color: @orange;
+					text-decoration: none;
+				}
+			}
 			&:not(:last-child) {
 				a {					
 					border-right: 1px solid #fff;
@@ -369,13 +382,13 @@ body {
 		}
 	}
 	&__address {
-		background: url(../img/contacts/address.png) no-repeat 0 0;
+		background: url(../_strap/img/contacts/address.png) no-repeat 0 0;
 	}
 	&__phone {
-		background: url(../img/contacts/phone.png) no-repeat 0 0;
+		background: url(../_strap/img/contacts/phone.png) no-repeat 0 0;
 	}
 	&__email {
-		background: url(../img/contacts/email.png) no-repeat 0 0;
+		background: url(../_strap/img/contacts/email.png) no-repeat 0 0;
 	}
 	@media @mobile {
 		font-size: 16px;

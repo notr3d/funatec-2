@@ -23,7 +23,7 @@
 			</div>
 		</section>
 		<section class="featured-products">
-			<div class="featured-products__wrapper container">
+			<div class="featured-products__wrapper">
 				<h2 class="featured-products__header">Featured products</h2>
 				<div class="featured-products__container">
 					<a href="product" class="featured-products__item">

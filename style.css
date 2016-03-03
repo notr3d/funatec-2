@@ -7108,6 +7108,7 @@ Entry Footer
 }
 .site {
   padding: 0;
+  overflow: hidden;
 }
 .content-area {
   padding: 15px;
@@ -7413,7 +7414,7 @@ Entry Footer
   text-align: right;
 }
 .map {
-  background: grey url(../img/map-bg.png) center;
+  background: grey url(../_strap/img/map-bg.png) center;
   background-size: cover;
   height: 400px;
   margin-top: 40px;
@@ -7435,11 +7436,11 @@ body {
 .scrollup {
   position: absolute;
   bottom: 5px;
-  right: 5px;
+  right: 20px;
   width: 45px;
   height: 45px;
   background: rgba(0, 0, 0, 0.33);
-  border: 4px solid rgba(0, 0, 0, 0.33);
+  border: 4px solid rgba(128, 128, 128, 0.33);
   outline: none;
   transition: all .3s;
 }
@@ -7448,17 +7449,21 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  border-left: 5px solid rgba(0, 0, 0, 0.33);
-  border-top: 5px solid rgba(0, 0, 0, 0.33);
+  border-left: 5px solid rgba(128, 128, 128, 0.33);
+  border-top: 5px solid rgba(128, 128, 128, 0.33);
   top: 50%;
   left: 50%;
   margin-top: 5px;
   margin-left: 2px;
   transform: rotate(45deg);
+  transition: all .3s;
 }
 .scrollup:hover {
-  transform: rotateY(180deg);
   background-color: rgba(0, 0, 0, 0.66);
+  border-color: #ea940a;
+}
+.scrollup:hover::before {
+  border-color: #ea940a;
 }
 @media (max-width: 767px) {
   .scrollup {
@@ -7470,60 +7475,61 @@ body {
 .page-header {
   padding-top: 55px;
   padding-bottom: 35px;
+  margin: 0;
   background: radial-gradient(100vh, #fff, #505050);
 }
-.page-header .page-nav .dropdown-menu {
+.page-header .navbar {
+  margin-bottom: 0 !important;
+  padding: 0 30px;
+}
+.page-header .navbar-nav {
+  background: rgba(0, 0, 0, 0.5);
+}
+.page-header .navbar-nav li .dropdown-menu {
   border-radius: 0;
   background: #ea940a;
   padding: 0;
   left: 0 !important;
 }
-.page-header .page-nav .dropdown-menu a {
+.page-header .navbar-nav li .dropdown-menu li > a {
   color: #fff;
   padding: 5px 0 5px 15px;
 }
-.page-header .page-nav .dropdown-menu a:hover {
+.page-header .navbar-nav li .dropdown-menu li > a:hover {
   background: #f6aa31;
 }
-.page-header .page-nav__link {
+.page-header .navbar-nav li a {
   font-size: 12px;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   transition: all .3s;
 }
-.page-header .page-nav__link:hover {
+.page-header .navbar-nav li a:hover {
   background: #ea940a;
 }
 @media (max-width: 767px) {
-  .page-header .page-nav__link:hover {
+  .page-header .navbar-nav li a:hover {
     padding-left: 40px;
   }
 }
-.page-header .page-nav__link:focus {
+.page-header .navbar-nav li a:focus {
   background: #ea940a !important;
 }
-.page-header .page-nav__link--active {
+.page-header .navbar-nav li a--active {
   background: transparent !important;
   box-shadow: 0 5px 0 0 #ea940a;
 }
 @media (max-width: 767px) {
-  .page-header .page-nav__link--active {
+  .page-header .navbar-nav li a--active {
     background: #ea940a !important;
     box-shadow: none;
   }
 }
 @media (max-width: 767px) {
-  .page-header .page-nav__link {
+  .page-header .navbar-nav li a {
     background: #ea940a;
   }
-}
-.page-header .navbar {
-  margin-bottom: 0;
-  padding: 0 30px;
-}
-.page-header .navbar-nav {
-  background: rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 767px) {
   .page-header .navbar-nav {
@@ -7542,7 +7548,7 @@ body {
 .page-header .page-logo {
   margin-left: 15px;
   width: 200px;
-  background: url(../img/page-logo.png) no-repeat center;
+  background: url(../_strap/img/page-logo.png) no-repeat center;
 }
 .slick-slide:focus {
   outline: none;
@@ -7703,6 +7709,7 @@ body {
   padding: 15px 0;
   border-top: 5px solid gray;
   background: radial-gradient(100vh, #b9b9b9, #505050);
+  background: #272527;
 }
 .page-footer h2 {
   color: #ea940a;
@@ -7724,6 +7731,13 @@ body {
 .page-footer__links li {
   padding: 5px 0;
   display: inline-block;
+}
+.page-footer__links li a {
+  transition: all .3s;
+}
+.page-footer__links li a:hover {
+  color: #ea940a;
+  text-decoration: none;
 }
 .page-footer__links li:not(:last-child) a {
   border-right: 1px solid #fff;
@@ -7762,13 +7776,13 @@ body {
   }
 }
 .page-footer__address {
-  background: url(../img/contacts/address.png) no-repeat 0 0;
+  background: url(../_strap/img/contacts/address.png) no-repeat 0 0;
 }
 .page-footer__phone {
-  background: url(../img/contacts/phone.png) no-repeat 0 0;
+  background: url(../_strap/img/contacts/phone.png) no-repeat 0 0;
 }
 .page-footer__email {
-  background: url(../img/contacts/email.png) no-repeat 0 0;
+  background: url(../_strap/img/contacts/email.png) no-repeat 0 0;
 }
 @media (max-width: 767px) {
   .page-footer {
