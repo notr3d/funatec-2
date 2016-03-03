@@ -7,8 +7,8 @@
 <meta name="theme-color" content="#ea940a">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href="css/slick.css" rel="stylesheet">
-<link href="css/slick-theme.css" rel="stylesheet">
+<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/slick.css" rel="stylesheet">
+<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/slick-theme.css" rel="stylesheet">
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
@@ -21,19 +21,7 @@
 <div id="page" class="site container-fluid">
 	<header id="masthead" class="site-header page-header" role="banner">
 		<div class="site-header__wrapper container">
-			<!--<div class="site-branding">
-				<?php if ( is_front_page() || is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php else : ?>
-					<h3 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
-				<?php endif;
-
-				$description = get_bloginfo( 'description', 'display' );
-				if ( $description || is_customize_preview() ) : ?>
-					<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-				<?php endif; ?>
-			</div><!-- .site-branding -->
-			<nav id="site-navigation" class="main-navigation navbar navbar-default" role="navigation">
+			<nav id="site-navigation" class="main-navigation navbar container" role="navigation">
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
 							<div class="navbar-header">
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
@@ -46,7 +34,7 @@
 							</div>
 
 							<div class="collapse navbar-collapse" id="navbar-collapse-main">
-								<ul class="nav navbar-nav">
+								<ul class="nav navbar-nav navbar-right">
 									<?php if( has_nav_menu( 'primary' ) ) :
 										wp_nav_menu( array(
 															'theme_location'  => 'primary',
@@ -70,26 +58,24 @@
 							</div><!-- /.navbar-collapse -->
 
 			</nav><!-- #site-navigation -->
-			<div class="site-branding">
-				<?php if ( is_front_page() ) : ?>
-					<section class="main-slider">
-						<div class="main-slider__wrapper container">
-							<a href="product.html" class="main-slider__item">
-								<img src="wp-content/themes/_strap/img/main-slider/1.jpg" alt="">
-							</a>
-							<a href="product.html" class="main-slider__item">
-								<img src="wp-content/themes/_strap/img/main-slider/2.jpg" alt="">
-							</a>
-							<a href="product.html" class="main-slider__item">
-								<img src="wp-content/themes/_strap/img/main-slider/3.jpg" alt="">
-							</a>
-						</div>
-					</section>
-				<?php endif; ?>
-				<?php if ( is_page('contacts')) : ?>
-					<div class="map" id="map"></div>
-				<?php endif; ?>
-			</div><!-- .site-branding -->
+			<?php if ( is_front_page() ) : ?>
+				<section class="main-slider">
+					<div class="main-slider__wrapper container">
+						<a href="product.html" class="main-slider__item">
+							<img src="wp-content/themes/_strap/img/main-slider/1.jpg" alt="">
+						</a>
+						<a href="product.html" class="main-slider__item">
+							<img src="wp-content/themes/_strap/img/main-slider/2.jpg" alt="">
+						</a>
+						<a href="product.html" class="main-slider__item">
+							<img src="wp-content/themes/_strap/img/main-slider/3.jpg" alt="">
+						</a>
+					</div>
+				</section>
+			<?php endif; ?>
+			<?php if ( is_page('contacts')) : ?>
+				<div class="map" id="map"></div>
+			<?php endif; ?>
 		</div>
 	</header><!-- #masthead -->
 	<div id="content" class="site-content">
