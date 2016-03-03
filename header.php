@@ -21,9 +21,9 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site container-fluid">
 	<header id="masthead" class="site-header page-header" role="banner">
-		<div class="site-header__wrapper container">
-		  <section class="page-nav">
-				<nav id="site-navigation" class="main-navigation navbar container" role="navigation">
+		<div class="site-header__wrapper">
+		  <section class="page-nav container">
+				<nav id="site-navigation" class="main-navigation navbar" role="navigation">
 					<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
 								<div class="navbar-header">
 										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
