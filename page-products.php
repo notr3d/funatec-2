@@ -27,7 +27,7 @@ get_header(); ?>
 						<button class="mount" id="mount">Mount</button>
 						<button class="shifter" id="shifter">Shifters</button>
 					</div>
-					<div class="products__container container">
+					<div class="products__container">
 						<a href="product" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 wheel">
 							<div class="products__inner">
 								<img src="http://localhost/funatec-2/wp-content/themes/_strap/img/products/1.jpg" alt="">

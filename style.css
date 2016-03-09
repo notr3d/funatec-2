@@ -7135,7 +7135,7 @@ Entry Footer
   display: block;
   padding: 8px;
   border: 1px solid #ddd;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   margin-right: 3px;
   color: #272527;
   transition: all .3s;
@@ -7163,7 +7163,7 @@ Entry Footer
   }
 }
 .products__filter {
-  margin: 20px 0;
+  margin: 20px 15px;
   display: inline-block;
   float: right;
 }
@@ -7690,13 +7690,13 @@ body {
   margin-right: 10px;
 }
 .features__item {
-  padding: 0 45px;
+  padding: 0 15px;
 }
 .features__item h3 {
   color: #ea940a;
 }
 .featured-products {
-  padding: 20px 30px;
+  padding: 20px 0;
   background: #f4f2f4;
   margin-bottom: 20px;
   border: 1px solid #eee;
