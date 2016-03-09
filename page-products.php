@@ -17,7 +17,7 @@ get_header(); ?>
 	<div class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="products">
-				<div class="products__wrapper container">
+				<div class="products__wrapper">
 					<h1 class="products__header">Products</h1>
 					<div class="products__filter">
 						<span class="hidden-xs">Filter by</span>

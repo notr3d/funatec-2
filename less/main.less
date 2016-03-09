@@ -3,6 +3,7 @@
 @desktop: ~ "(min-width: 1080)";
 
 @orange:#ea940a;
+@black:#272527;
 
 @import "products.less";
 @import "product.less";
@@ -57,7 +58,7 @@ body {
 		}
 	}
 	@media @mobile {
-		bottom: 50px;
+		bottom: 65px;
 		left: 50%;
 		margin-left: -22px;
 	}
@@ -67,7 +68,10 @@ body {
 	padding-top: 55px;
 	padding-bottom: 35px;
 	margin: 0;
-	background: radial-gradient(100vh, #fff, #505050);		
+	background: radial-gradient(100vh, #fff, #505050);	
+	.page-nav {
+		padding: 0;
+	}
 	.navbar {
 		margin-bottom: 0 !important;
 		padding: 0 30px;
@@ -263,6 +267,8 @@ body {
 .featured-products {
 	padding: 20px 30px;
 	background: #f4f2f4;
+	margin-bottom: 20px;
+	border: 1px solid #eee;
 	&__header {
 		margin: 0 15px 20px;
 	}
@@ -287,9 +293,9 @@ body {
 			content: '';
 			background: #fff;
 			border-radius: 50%;
-			width: 10px;
-			height: 10px;			
-			box-shadow: 0 0 0 1px #1f1f1f;							
+			width: 8px;
+			height: 8px;			
+			box-shadow: 0 0 0 1px #272527;							
 		  transition: all .3s;
 			}
 		}
@@ -297,7 +303,7 @@ body {
 	.slick-active {
 		button {
 			&::before {
-				background: #848181;
+				background: @black;
 			}
 		}
 	}
@@ -309,12 +315,13 @@ body {
 	&__higher {
 		background: #f4f2f4;
 		padding-bottom: 10px;
+		border-top: 2px solid #eee;
 	}
 	&__lower {	
 		padding: 15px 0;
-		border-top: 5px solid gray;	
+		border-top: 2px solid gray;	
 		background: radial-gradient(100vh, #b9b9b9, #505050);		
-		background: #272527;
+		background: @black;
 	}
 	h2 {
 		color: @orange;
@@ -376,7 +383,7 @@ body {
 		display: block;
 		text-align: right;
 		@media @mobile {
-			margin-top: 50px;
+			margin-top: 80px;
 			float: none;
 			text-align: center;
 		}

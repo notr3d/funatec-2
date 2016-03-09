@@ -7130,7 +7130,6 @@ Entry Footer
 }
 .products__filter {
   margin: 20px 0;
-  padding: 0 15px;
   display: inline-block;
   float: right;
 }
@@ -7413,8 +7412,8 @@ Entry Footer
   background-size: cover;
   height: 400px;
   margin-top: 40px;
-  border-top: 5px solid grey;
-  border-bottom: 5px solid grey;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
 }
 /*@font-face {
   font-family: Oswald;
@@ -7462,7 +7461,7 @@ body {
 }
 @media (max-width: 767px) {
   .scrollup {
-    bottom: 50px;
+    bottom: 65px;
     left: 50%;
     margin-left: -22px;
   }
@@ -7472,6 +7471,9 @@ body {
   padding-bottom: 35px;
   margin: 0;
   background: radial-gradient(100vh, #fff, #505050);
+}
+.page-header .page-nav {
+  padding: 0;
 }
 .page-header .navbar {
   margin-bottom: 0 !important;
@@ -7659,6 +7661,8 @@ body {
 .featured-products {
   padding: 20px 30px;
   background: #f4f2f4;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
 }
 .featured-products__header {
   margin: 0 15px 20px;
@@ -7684,13 +7688,13 @@ body {
   content: '';
   background: #fff;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  box-shadow: 0 0 0 1px #1f1f1f;
+  width: 8px;
+  height: 8px;
+  box-shadow: 0 0 0 1px #272527;
   transition: all .3s;
 }
 .featured-products .slick-active button::before {
-  background: #848181;
+  background: #272527;
 }
 .page-footer {
   font-size: 12px;
@@ -7699,10 +7703,11 @@ body {
 .page-footer__higher {
   background: #f4f2f4;
   padding-bottom: 10px;
+  border-top: 2px solid #eee;
 }
 .page-footer__lower {
   padding: 15px 0;
-  border-top: 5px solid gray;
+  border-top: 2px solid gray;
   background: radial-gradient(100vh, #b9b9b9, #505050);
   background: #272527;
 }
@@ -7765,7 +7770,7 @@ body {
 }
 @media (max-width: 767px) {
   .page-footer__copy {
-    margin-top: 50px;
+    margin-top: 80px;
     float: none;
     text-align: center;
   }
