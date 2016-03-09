@@ -13,32 +13,32 @@
 		</div><!-- #content__wrapper -->
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer page-footer" role="contentinfo">
-	  <div class="page-footer__higher">
+	<footer id="colophon" class="site-footer" role="contentinfo">
+	  <div class="site-footer__higher">
     	<div class="container">
-    		<section class="page-footer__about col-sm-6">
+    		<section class="site-footer__about col-sm-6">
 				<h2>about</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis molestiae, possimus illum! Reprehenderit minima rem, nulla autem molestiae, maxime id, voluptatem voluptate cupiditate labore impedit voluptatum. Minima recusandae maiores natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, fugiat, nihil mollitia asperiores, officia, est similique natus necessitatibus quae maxime nam incidunt. Ullam ea facere atque, commodi, libero beatae doloremque.</p>
 			</section>
-			<section class="page-footer__contacts col-sm-6">
+			<section class="site-footer__contacts col-sm-6">
 				<h2>contact us</h2>
 				<ul>
-					<li class="page-footer__address">Seligenthalerstr. 16 a, D-84034 Landshut, Germany</li>
-					<li class="page-footer__phone">+49 (871) 9221122</li>
-					<li class="page-footer__email"><a href="#">lorem@lorem.com</a></li>
+					<li class="site-footer__address">Seligenthalerstr. 16 a, D-84034 Landshut, Germany</li>
+					<li class="site-footer__phone">+49 (871) 9221122</li>
+					<li class="site-footer__email"><a href="#">lorem@lorem.com</a></li>
 				</ul>
 			</section>
     	</div>
     </div>
-    <div class="page-footer__lower">
+    <div class="site-footer__lower">
       <div class="container">
-				<ul class="page-footer__links col-sm-9">
+				<ul class="site-footer__links col-sm-9">
 					<li><a href="home">Home</a></li>
 					<li><a href="products">Products</a></li>
 					<li><a href="about">About us</a></li>
 					<li><a href="contacts">Contacts</a></li>
 				</ul> 		
-				<span class="page-footer__copy col-sm-3">Copyright © 2016 Lorem</span>
+				<span class="site-footer__copy col-sm-3">Copyright © 2016 Lorem</span>
 			</div>	
     </div>     
   	<button class="scrollup"></button>

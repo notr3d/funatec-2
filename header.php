@@ -20,7 +20,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site container-fluid">
-	<header id="masthead" class="site-header page-header" role="banner">
+	<header id="masthead" class="site-header" role="banner">
 		<div class="site-header__wrapper">
 		  <section class="page-nav container">
 				<nav id="site-navigation" class="main-navigation navbar" role="navigation">
