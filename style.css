@@ -7135,7 +7135,7 @@ Entry Footer
   display: block;
   padding: 8px;
   border: 1px solid #ddd;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   margin-right: 3px;
   color: #272527;
   transition: all .3s;
@@ -7462,7 +7462,7 @@ Entry Footer
 }
 body {
   margin: 0;
-  background: #faf8fa;
+  background: #faf8fa url(img/body-bg.png);
 }
 .scrollup {
   position: absolute;
@@ -7842,12 +7842,13 @@ body {
   padding: 5px 0;
 }
 .about {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 .about__wrapper {
   border: 1px solid #ddd;
-  border-bottom: 5px solid #ddd;
+  border-bottom: 10px solid #ddd;
   padding: 0;
+  background: #fff;
 }
 .about__header {
   margin: 0;
