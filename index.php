@@ -16,7 +16,18 @@ get_header(); ?>
 
 	<div class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			<section class="products">
+				<div class="products__wrapper">
+					<h1 class="products__header">Products</h1>
+					<div class="products__filter">
+						<span class="hidden-xs">Filter by</span>
+						<button id="all" class="filter-active">All</button>
+						<button class="pedals" id="pedals">Pedals</button>
+						<button class="wheel" id="wheel">Wheels</button>
+						<button class="mount" id="mount">Mount</button>
+						<button class="shifter" id="shifter">Shifters</button>
+					</div>
+					<div class="products__container">
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -35,7 +46,8 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'template-parts/content', get_post_format() );
+//					get_template_part( 'template-parts/content', get_post_format() );
+					get_template_part( 'template-parts/content', 'product' );
 				?>
 
 			<?php endwhile; ?>
@@ -47,7 +59,9 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+					</div>
+				</div>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
