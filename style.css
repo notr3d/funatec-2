@@ -7110,6 +7110,40 @@ Entry Footer
   padding: 0;
   overflow: hidden;
 }
+.widget-area {
+  margin-top: 15px;
+  padding: 15px 0 15px 20px;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+.widget-area .widget-title {
+  margin-top: 0;
+  color: #ea940a;
+  font-size: 18px;
+}
+.widget-area input#s {
+  border-radius: 0;
+}
+.widget-area .btn.btn-default {
+  border-radius: 0;
+}
+.widget-area ul {
+  list-style: none;
+  padding: 0;
+}
+.widget-area ul a {
+  display: block;
+  padding: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  margin-right: 22px;
+  color: #272527;
+  transition: all .3s;
+}
+.widget-area ul a:hover {
+  text-decoration: none;
+  background: #ddd;
+}
 .navbar {
   border-radius: 0;
   margin: 0;
@@ -7226,6 +7260,9 @@ Entry Footer
 }
 .page-main {
   padding: 15px 0;
+}
+.product {
+  margin: 15px 0;
 }
 .product__header {
   margin: 0;
