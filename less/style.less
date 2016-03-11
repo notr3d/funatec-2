@@ -94,7 +94,7 @@ and Bootstrap https://github.com/twbs/bootstrap
 	
 }
 .widget-area {
-	margin-top: 15px;
+	margin: 15px 0;
 	padding: 20px;
 	background: #eee;
 	border: 1px solid #ddd;
@@ -133,6 +133,37 @@ and Bootstrap https://github.com/twbs/bootstrap
 	margin: 0;
 }
 .navbar-collapse {
+	
+}
+
+.nav-links {
+	a {
+		display: inline-block;
+		border: 1px solid #ddd;
+		background: #fff;
+		padding: 15px;
+		color: #000;
+		transition: all .3s;
+		&:hover {
+			text-decoration: none;
+			background: @orange;
+			color: #fff;
+		}
+	}
+	.nav-previous {
+		a {
+			&::before {
+				content: '←  ';
+			}
+		}
+	}
+	.nav-next {
+		a {
+			&::after {
+				content: '  →';
+			}
+		}
+	}
 	
 }
 

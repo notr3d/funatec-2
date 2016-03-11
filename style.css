@@ -7111,7 +7111,7 @@ Entry Footer
   overflow: hidden;
 }
 .widget-area {
-  margin-top: 15px;
+  margin: 15px 0;
   padding: 20px;
   background: #eee;
   border: 1px solid #ddd;
@@ -7147,6 +7147,25 @@ Entry Footer
 .navbar {
   border-radius: 0;
   margin: 0;
+}
+.nav-links a {
+  display: inline-block;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 15px;
+  color: #000;
+  transition: all .3s;
+}
+.nav-links a:hover {
+  text-decoration: none;
+  background: #ea940a;
+  color: #fff;
+}
+.nav-links .nav-previous a::before {
+  content: '←  ';
+}
+.nav-links .nav-next a::after {
+  content: '  →';
 }
 .products {
   padding: 40px 0;
