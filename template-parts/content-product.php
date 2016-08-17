@@ -27,18 +27,7 @@
 					) );
 				?>
 				</article>
-			<div class="product__features col-sm-6">
-				<h3>Features:</h3>
-				<ul>
-
-				</ul>
-			</div>
-			<div class="product__compatibility col-sm-6">
-				<h3>Compatibility</h3>
-				<ul>
-
-				</ul>
-			</div>
+			
 			<div class="clearfix"></div>				
 		
   	</div>
